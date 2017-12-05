@@ -84,7 +84,7 @@
     else {
         image = [[UIImage alloc] initWithData:data];
         
-        if (data.length / 1024 > 100) {
+        if (data.length / 1024 > 60) {
             image = [self compressImageWith:image];
         }
         
